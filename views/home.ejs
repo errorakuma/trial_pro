@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>sensor</title>
+    <script src="https://kit.fontawesome.com/f50db9bb1d.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+
+
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            border: 2px solid red;
+        }
+
+        i {
+            color: red;
+
+        }
+
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            height: 900px;
+        }
+
+        section {
+            border: 2px solid red;
+            height: 500px;
+            /* align-content: space-evenly; */
+            justify-content: space-evenly;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 500px;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <section>
+            <h1>HOME</h1>
+            <i class="fa-solid fa-temperature-three-quarters fa-2xl"></i>
+            <p>temperature = <%= re[0].temperature %> °C
+            </p>
+            <p>pressure = <%= re[0].pressure %>
+            </p>
+            <p>humidity = <%= re[0].humidity %> %
+            </p>
+        </section>
+    </main>
+</body>
+
+</html>
